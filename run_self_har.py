@@ -125,7 +125,7 @@ def get_config_default_value_if_none(experiment_config, entry, set_value=True):
     
     if entry == 'type':
         default_value = 'none'
-    elif entry == 'tag':
+    elif entry == 'tag':ِ
         default_value = datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
     elif entry == 'previous_config_offset':
         default_value = 0
@@ -157,7 +157,6 @@ def get_config_default_value_if_none(experiment_config, entry, set_value=True):
         print(f"INFO: configuration {entry} set to default value: {default_value}.")
     
     return default_value
-
 
 if __name__ == '__main__':
     parser = get_parser()
