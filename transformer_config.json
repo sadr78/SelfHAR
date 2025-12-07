@@ -1,0 +1,15 @@
+{
+    "core_model": "transformer",
+
+    "pipeline": [
+        "Teacher_Train",
+        "Self_HAR_Pre_Train",
+        "Student_Fine_Tune",
+        "Student_Linear_Eval"
+    ],
+
+    "dataset": "WISDM",
+    "window_size": 400,
+    "num_channels": 6,
+    "num_classes": 6
+}
